@@ -16,12 +16,12 @@ setup(
         (os.path.join('share', package_name, 'resource'), glob('resource/*.ui')),
         ("share/" + package_name + "/test", glob('test/*.dxf')),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'ezdxf[draw5]'],
     zip_safe=True,
     maintainer='george',
     maintainer_email='george.dwyer@ucl.ac.uk',
     description='TODO: Package description',
-    license='TODO: License declaration',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
